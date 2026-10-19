@@ -1,0 +1,149 @@
+{
+  "users": {
+    "u_demo_01": {
+      "uid": "u_demo_01",
+      "email": "cliente@ejemplo.cl",
+      "name": "Cliente Ejemplo",
+      "role": "cliente",
+      "provider": "password",
+      "emailVerified": true,
+      "createdAt": "2026-01-15T12:00:00Z"
+    }
+  },
+  "shippingData": {
+    "u_demo_01": {
+      "firstName": "Cliente",
+      "lastName": "Ejemplo",
+      "rut": "11.111.111-1",
+      "email": "cliente@ejemplo.cl",
+      "phone": "+56 9 0000 0000",
+      "street": "Calle Ejemplo 123",
+      "city": "Providencia",
+      "region": "Región Metropolitana",
+      "updatedAt": "2026-01-15T12:05:00Z"
+    }
+  },
+  "userCarts": {
+    "u_demo_01": {
+      "items": [
+        {
+          "id": "producto-demo-1",
+          "name": "Shampoo Demo 250ml",
+          "price": 19900,
+          "quantity": 1
+        }
+      ],
+      "updatedAt": "2026-01-15T12:10:00Z"
+    }
+  },
+  "categories": {
+    "shampoo": {
+      "id": "shampoo",
+      "name": "Shampoo",
+      "description": "Limpieza del cabello"
+    }
+  },
+  "brands": {
+    "marca-demo": {
+      "id": "marca-demo",
+      "name": "Marca Demo",
+      "active": true
+    }
+  },
+  "products": {
+    "producto-demo-1": {
+      "id": "producto-demo-1",
+      "sku": "PRD-00001",
+      "name": "Shampoo Demo 250ml",
+      "brand": "marca-demo",
+      "category": "shampoo",
+      "price": 19900,
+      "discountType": "percentage",
+      "discountPercent": 10,
+      "discountedPrice": 17910,
+      "stock": 10,
+      "active": true,
+      "unit": "ml",
+      "description": "Producto de ejemplo.",
+      "createdAt": "2026-01-10T10:00:00Z"
+    }
+  },
+  "discountCodes": {
+    "cupon-demo": {
+      "id": "cupon-demo",
+      "code": "DEMO10",
+      "type": "percentage",
+      "value": 10,
+      "maxUses": 100,
+      "usesPerUser": 1,
+      "usedCount": 0
+    }
+  },
+  "orders": {
+    "pedido-demo-1": {
+      "id": "pedido-demo-1",
+      "userId": "u_demo_01",
+      "trackingCode": "MO-0000-0001",
+      "status": "paid",
+      "guestCheckout": false,
+      "items": [
+        {
+          "id": "producto-demo-1",
+          "name": "Shampoo Demo 250ml",
+          "price": 17910,
+          "quantity": 1
+        }
+      ],
+      "totals": {
+        "subtotal": 17910,
+        "shipping": 3990,
+        "discount": 0,
+        "total": 21900
+      },
+      "shippingData": {
+        "firstName": "Cliente",
+        "lastName": "Ejemplo",
+        "city": "Providencia",
+        "region": "Región Metropolitana"
+      },
+      "billing": {
+        "documentType": "boleta"
+      },
+      "paymentMethod": "mercado_pago",
+      "paymentStatus": "approved",
+      "createdAt": "2026-01-15T12:20:00Z"
+    }
+  },
+  "orderCodes": {
+    "MO00000001": {
+      "code": "MO00000001",
+      "orderId": "pedido-demo-1",
+      "createdAt": "2026-01-15T12:20:00Z"
+    }
+  },
+  "iaProductTags": {
+    "producto-demo-1": {
+      "productId": "producto-demo-1",
+      "scores": {
+        "hidratacion": 2,
+        "reparacion": 1
+      },
+      "confidence": "Media"
+    }
+  },
+  "hairAnalysisConsents": {
+    "u_demo_01": {
+      "consentimiento_analisis": true,
+      "consentimiento_entrenamiento": false,
+      "consentimiento_revocado": false,
+      "version_terminos": "1.0"
+    }
+  },
+  "configuracion": {
+    "ia_cabello": {
+      "habilitada": true,
+      "visibilidad": "publico",
+      "mostrarEnInicio": true
+    }
+  }
+}
